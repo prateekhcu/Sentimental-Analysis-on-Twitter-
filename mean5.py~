@@ -1,0 +1,20 @@
+a=open('fout1.txt','r') 
+b=open('AFINN-111.txt','r') #afinn file
+c=open('fout23.txt','a') # number file
+d=open('FinalResult.txt','a') # actual meaning
+
+for i in a:
+    str1=0
+    str1=i.split()
+    
+    for j in str1:
+        b=open('AFINN-111.txt','r')
+        
+        for k in b:
+            str2=0
+            str2=k.split()
+            # print str2
+            if(str2[0]==j):
+                #print str2[0]
+                #print str2[1]
+        
